@@ -18,10 +18,13 @@ const Contact = () => {
             <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-teal-500/20 rounded-full blur-[80px] pointer-events-none"></div>
 
             <div className="relative z-10">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6">
+              <h3 className="text-[#00A3E0] uppercase tracking-[0.2em] text-xs md:text-sm font-bold mb-4 flex items-center gap-2">
+                Get In Touch
+              </h3>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 text-gray-900">
                 Contact Us
               </h2>
-              <div className="w-16 h-1 bg-[#00A3E0] mb-8 rounded-full"></div>
+              <div className="w-20 h-1 bg-gradient-to-r from-[#00A3E0] to-[#004e66] rounded-full mb-10"></div>
               
               <p className="text-white/80 text-[15px] leading-relaxed font-light mb-10 max-w-md">
                 Dear Friends, if you have any questions or need a quotation, just fill in the below and submit them to me and I will provide you with answers as quickly as possible. If you need to speak to me please call:

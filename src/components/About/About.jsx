@@ -15,8 +15,9 @@ const About = () => {
           {/* Left Column: Exact Text Content */}
           <div className="w-full lg:w-1/2 flex flex-col justify-center animate-fade-in-up pr-0 lg:pr-8 py-8">
 
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-tight mb-8 text-white uppercase">
-              WELCOME TO VILLA PARADISO
+
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 text-white">
+              Welcome to Villa Paradiso
             </h2>
 
             <p className="text-white/90 text-[15px] md:text-base leading-[1.8] mb-6 font-light">
@@ -51,7 +52,7 @@ const About = () => {
                 <div className="absolute bottom-5 left-5 right-5 pointer-events-none">
                   <h4 className="text-3xl font-bold text-white mb-1">150ft</h4>
                   <p className="text-white/90 text-xs font-medium leading-tight">
-                    Of pristine white <br/> <span className="text-blue-300 font-bold">sand beach</span>
+                    Of pristine white <br /> <span className="text-blue-300 font-bold">sand beach</span>
                   </p>
                 </div>
               </div>
@@ -62,7 +63,7 @@ const About = () => {
                 <div className="absolute bottom-5 left-5 right-5 pointer-events-none">
                   <h4 className="text-3xl font-bold text-white mb-1">100%</h4>
                   <p className="text-white/90 text-xs font-medium leading-tight">
-                    Private and <br/> <span className="text-blue-300 font-bold">secluded</span> escape
+                    Private and <br /> <span className="text-blue-300 font-bold">secluded</span> escape
                   </p>
                 </div>
               </div>
@@ -87,7 +88,7 @@ const About = () => {
                 <div className="absolute bottom-5 left-5 right-5 pointer-events-none">
                   <h4 className="text-3xl font-bold text-white mb-1">Pool</h4>
                   <p className="text-white/90 text-xs font-medium leading-tight">
-                    Private freshwater <br/> <span className="text-blue-300 font-bold">swimming</span>
+                    Private freshwater <br /> <span className="text-blue-300 font-bold">swimming</span>
                   </p>
                 </div>
               </div>
@@ -98,7 +99,7 @@ const About = () => {
                 <div className="absolute bottom-4 left-4 right-4 pointer-events-none">
                   <h4 className="text-2xl font-bold text-white mb-1">18</h4>
                   <p className="text-white/90 text-[10px] font-medium leading-tight">
-                    Guests can be <br/> <span className="text-blue-300 font-bold">accommodated</span>
+                    Guests can be <br /> <span className="text-blue-300 font-bold">accommodated</span>
                   </p>
                 </div>
               </div>

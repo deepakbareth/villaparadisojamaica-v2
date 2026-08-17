@@ -16,10 +16,10 @@ const Location = () => {
               </svg>
               Find Us Here
             </h3>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 tracking-tight mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 text-gray-900">
               Our Location
             </h2>
-            <div className="w-16 h-1 bg-gradient-to-r from-[#00A3E0] to-[#004e66] rounded-full mb-10"></div>
+            <div className="w-20 h-1 bg-gradient-to-r from-[#00A3E0] to-[#004e66] rounded-full mb-10"></div>
 
             <div className="text-gray-600 text-[15px] leading-relaxed font-light flex flex-col gap-6">
               <p>

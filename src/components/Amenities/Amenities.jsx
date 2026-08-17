@@ -63,14 +63,14 @@ const Amenities = () => {
       <div className="max-w-[1440px] mx-auto relative z-10">
         
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h3 className="text-[#00A3E0] uppercase tracking-[0.2em] text-xs md:text-sm font-bold mb-4">
+        <div className="text-center mb-16 flex flex-col items-center">
+          <h3 className="text-[#00A3E0] uppercase tracking-[0.2em] text-xs md:text-sm font-bold mb-4 flex items-center justify-center gap-2">
             Unmatched Comfort
           </h3>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-8">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 text-white">
             World-Class Amenities
           </h2>
-          <div className="w-16 h-0.5 bg-[#00A3E0]/50 mx-auto mt-8"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-[#00A3E0] to-[#004e66] rounded-full mb-10 mx-auto"></div>
         </div>
         
         {/* Amenities Grid */}

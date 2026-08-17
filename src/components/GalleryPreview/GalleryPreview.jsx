@@ -63,14 +63,14 @@ const GalleryPreview = () => {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl">
-            <h3 className="text-brand-rose uppercase tracking-[0.2em] text-xs md:text-sm font-bold mb-4 flex items-center gap-2">
+            <h3 className="text-[#00A3E0] uppercase tracking-[0.2em] text-xs md:text-sm font-bold mb-4 flex items-center gap-2">
               <ImageIcon className="w-4 h-4" />
               A Glimpse of Paradise
             </h3>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary tracking-tight leading-tight mb-4">
-              Explore the <br className="hidden md:block" />
-              Villa Beauty.
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 text-gray-900">
+              Explore the Villa Beauty
             </h2>
+            <div className="w-20 h-1 bg-gradient-to-r from-[#00A3E0] to-[#004e66] rounded-full mb-10"></div>
           </div>
           
           <button className="bg-primary hover:bg-accent text-white px-8 py-4 rounded-full font-bold text-sm transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-1 flex items-center gap-2 group w-fit">
