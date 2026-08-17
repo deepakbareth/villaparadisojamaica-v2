@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronDown } from 'lucide-react';
-import logo from '../../assets/logo2.png';
+import logo from '../../assets/logo2.png'; // Make sure this path is correct
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -9,11 +9,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 20) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 20);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -50,7 +46,7 @@ const Navbar = () => {
       href: '#',
       subLinks: [
         { title: 'KOSHER VACATION RENTALS', href: '#' },
-        { title: 'RETREAT PACKEGS AT VILLA PARADISO', href: '#' },
+        { title: 'RETREAT PACKAGES AT VILLA PARADISO', href: '#' },
         { title: 'WEDDINGS', href: '#' },
       ]
     },
@@ -60,31 +56,31 @@ const Navbar = () => {
   ];
 
   const toggleMobileDropdown = (title) => {
-    if (openMobileDropdown === title) {
-      setOpenMobileDropdown(null);
-    } else {
-      setOpenMobileDropdown(title);
-    }
+    setOpenMobileDropdown(openMobileDropdown === title ? null : title);
   };
 
   return (
     <nav
-      className={`sticky top-0 left-0 w-full z-[1000] transition-all duration-300 ${isScrolled
+      className={`fixed top-0 left-0 w-full z-[100] transition-all duration-300 ${isScrolled
         ? 'py-2 bg-brand-beige/95 backdrop-blur-md shadow-sm border-b border-black/5'
         : 'py-3 bg-brand-beige'
         }`}
     >
-      <div className="max-w-[1440px] mx-auto px-6 md:px-8 flex justify-between items-center">
+      <div className="max-w-[1440px] mx-auto px-6 md:px-8 flex justify-between items-center relative z-[101]">
         {/* Logo area */}
         <div className="flex-shrink-0">
           <a href="#">
-            <img src={logo} alt="Villa Paradiso Logo" className="h-10 md:h-12 w-auto object-contain transition-all duration-300" />
+            <img
+              src={logo}
+              alt="Villa Paradiso Logo"
+              className="h-10 md:h-12 w-auto object-contain transition-all duration-300"
+            />
           </a>
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden xl:block">
-          <ul className="flex items-center gap-6">
+        <div className="hidden lg:block">
+          <ul className="flex items-center gap-4 xl:gap-6">
             {navLinks.map((link, index) => (
               <li key={index} className="group relative">
                 <a
@@ -97,7 +93,7 @@ const Navbar = () => {
 
                 {/* Desktop Dropdown */}
                 {link.subLinks && (
-                  <div className="absolute left-0 top-full mt-[-10px] w-64 bg-white shadow-xl rounded-b-lg border-t-2 border-accent opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50">
+                  <div className="absolute left-0 top-[100%] w-64 bg-white shadow-xl rounded-b-lg border-t-2 border-accent opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50">
                     {/* Small triangle pointer */}
                     <div className="absolute -top-[10px] left-6 w-0 h-0 border-l-[8px] border-r-[8px] border-b-[8px] border-l-transparent border-r-transparent border-b-white"></div>
                     <ul className="py-2 flex flex-col">
@@ -119,29 +115,29 @@ const Navbar = () => {
           </ul>
         </div>
 
-        {/* CTA Button */}
-        <div className="hidden xl:block">
+        {/* CTA Button (Desktop) */}
+        <div className="hidden lg:block">
           <button className="bg-primary text-white px-7 py-3 rounded-full font-bold text-[13px] transition-all duration-300 shadow-md border border-transparent hover:bg-accent hover:-translate-y-0.5 hover:shadow-lg uppercase tracking-wide">
             Book Now
           </button>
         </div>
 
-        {/* Mobile Menu Toggle */}
+        {/* Mobile Menu Toggle Hamburger */}
         <div
-          className="block xl:hidden cursor-pointer z-[1001]"
+          className="block lg:hidden cursor-pointer z-[1001]"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           <div className="w-6 h-5 relative flex flex-col justify-between">
-            <span className={`block h-[2px] w-full bg-primary rounded-sm transition-all duration-300 ${isMobileMenuOpen ? 'translate-y-[9px] rotate-45' : ''}`}></span>
+            <span className={`block h-[2px] w-full bg-primary rounded-sm transition-all duration-300 origin-left ${isMobileMenuOpen ? 'rotate-45 translate-x-[2px] -translate-y-[1px]' : ''}`}></span>
             <span className={`block h-[2px] w-full bg-primary rounded-sm transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0' : ''}`}></span>
-            <span className={`block h-[2px] w-full bg-primary rounded-sm transition-all duration-300 ${isMobileMenuOpen ? '-translate-y-[9px] -rotate-45' : ''}`}></span>
+            <span className={`block h-[2px] w-full bg-primary rounded-sm transition-all duration-300 origin-left ${isMobileMenuOpen ? '-rotate-45 translate-x-[2px] translate-y-[1px]' : ''}`}></span>
           </div>
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu Overlay */}
       <div
-        className={`fixed top-0 left-0 w-full h-[100dvh] bg-brand-beige/98 backdrop-blur-xl pt-24 pb-8 px-6 md:px-12 transition-transform duration-400 ease-in-out z-[999] overflow-y-auto ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        className={`fixed top-0 left-0 w-full h-[100dvh] bg-brand-beige/95 backdrop-blur-xl pt-24 pb-8 px-6 md:px-12 transition-transform duration-500 ease-in-out z-[90] overflow-y-auto ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
       >
         <ul className="flex flex-col gap-2">
