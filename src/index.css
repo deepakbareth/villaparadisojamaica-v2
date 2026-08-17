@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0F172A; /* Slate 900 */
+  --color-secondary: #38BDF8; /* Sky 400 */
+  --color-accent: #0284C7; /* Sky 600 */
+  --color-accent-dark: #0369A1; /* Darker sky */
+  --color-text-primary: #1E293B; /* Slate 800 */
+  --color-text-secondary: #64748B; /* Slate 500 */
+  --color-bg-light: #F8FAFC; /* Slate 50 */
+  
+  --color-brand-beige: #F5F5DC;
+  --color-brand-gray-light: #D3D3D3;
+  --color-brand-white: #FFFFFF;
+  --color-brand-cream: #FFFDD0;
+  --color-brand-rose: #C08081;
+  --color-brand-rose-dark: #A06061;
+  --color-brand-dark: #111111;
+
+  --font-sans: "Outfit", sans-serif;
+
+  --animate-fade-up: fadeUpAnim 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-fade-in-up: fadeUpAnim 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  @keyframes fadeUpAnim {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    @apply font-sans bg-bg-light text-text-primary leading-relaxed antialiased;
+  }
+}
