@@ -64,13 +64,13 @@ const Amenities = () => {
 
         {/* Section Header */}
         <div className="text-center mb-16 flex flex-col items-center">
-          <h3 className="text-[#00A3E0] uppercase tracking-[0.2em] text-xs md:text-sm font-bold mb-4 flex items-center justify-center gap-2">
+          <h3 className="text-gray-700 uppercase tracking-[0.2em] text-xs md:text-sm font-bold mb-4 flex items-center justify-center gap-2">
             Unmatched Comfort
           </h3>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 text-white">
             World-Class Amenities
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-[#00A3E0] to-[#004e66] rounded-full mb-10 mx-auto"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-[#a2f2ea] to-[#0f766e] rounded-full mb-10 mx-auto"></div>
         </div>
 
         {/* Amenities Grid */}
@@ -81,10 +81,10 @@ const Amenities = () => {
               className="flex flex-col items-center group cursor-default"
             >
               {/* Icon Container with Hover Effect */}
-              <div className="w-20 h-20 rounded-full border border-white/10 flex items-center justify-center mb-6 group-hover:bg-white/5 group-hover:border-[#00A3E0]/50 group-hover:shadow-[0_0_30px_rgba(0,163,224,0.15)] transition-all duration-500 relative">
+              <div className="w-20 h-20 rounded-full border border-white/10 flex items-center justify-center mb-6 group-hover:bg-white/5 group-hover:border-[#a2f2ea]/50 group-hover:shadow-[0_0_30px_rgba(0,163,224,0.15)] transition-all duration-500 relative">
                 {/* Inner glowing dot on hover */}
-                <div className="absolute inset-0 rounded-full bg-[#00A3E0]/0 group-hover:bg-[#00A3E0]/10 scale-50 group-hover:scale-100 transition-all duration-500"></div>
-                <div className="relative z-10 group-hover:scale-110 group-hover:text-[#00A3E0] transition-transform duration-500">
+                <div className="absolute inset-0 rounded-full bg-[#a2f2ea]/0 group-hover:bg-[#a2f2ea]/10 scale-50 group-hover:scale-100 transition-all duration-500"></div>
+                <div className="relative z-10 group-hover:scale-110 group-hover:text-[#a2f2ea] transition-transform duration-500">
                   {item.icon}
                 </div>
               </div>

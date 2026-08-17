@@ -15,8 +15,8 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      <Amenities />
       <GalleryPreview />
+      <Amenities />
       <Reviews />
       <Location />
       <Contact />

@@ -14,17 +14,17 @@ const Contact = () => {
           {/* Left Column: Contact Info & Text (From Screenshot) */}
           <div className="w-full lg:w-5/12 bg-[#95cfc9] text-white p-10 md:p-16 flex flex-col justify-between relative overflow-hidden">
             {/* Background decorative circles */}
-            <div className="absolute -top-24 -right-24 w-64 h-64 bg-[#00A3E0]/20 rounded-full blur-[80px] pointer-events-none"></div>
+            <div className="absolute -top-24 -right-24 w-64 h-64 bg-[#a2f2ea]/20 rounded-full blur-[80px] pointer-events-none"></div>
             <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-teal-500/20 rounded-full blur-[80px] pointer-events-none"></div>
 
             <div className="relative z-10">
-              <h3 className="text-[#00A3E0] uppercase tracking-[0.2em] text-xs md:text-sm font-bold mb-4 flex items-center gap-2">
+              <h3 className="text-gray-700 uppercase tracking-[0.2em] text-xs md:text-sm font-bold mb-4 flex items-center gap-2">
                 Get In Touch
               </h3>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 text-gray-900">
                 Contact Us
               </h2>
-              <div className="w-20 h-1 bg-gradient-to-r from-[#00A3E0] to-[#004e66] rounded-full mb-10"></div>
+              <div className="w-20 h-1 bg-gradient-to-r from-[#a2f2ea] to-[#0f766e] rounded-full mb-10"></div>
 
               <p className="text-white/80 text-[15px] leading-relaxed font-light mb-10 max-w-md">
                 Dear Friends, if you have any questions or need a quotation, just fill in the below and submit them to me and I will provide you with answers as quickly as possible. If you need to speak to me please call:
@@ -33,12 +33,12 @@ const Contact = () => {
               {/* Highlighted Phone Number */}
               <div className="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm mb-12 transform transition-transform hover:-translate-y-1 duration-300">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-[#00A3E0]/20 rounded-full flex items-center justify-center text-[#00A3E0]">
+                  <div className="w-12 h-12 bg-[#a2f2ea]/20 rounded-full flex items-center justify-center text-[#a2f2ea]">
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
                     <p className="text-white/50 text-xs uppercase tracking-widest font-bold mb-1">Direct Line</p>
-                    <a href="tel:4165616664" className="text-2xl md:text-3xl font-bold tracking-wider hover:text-[#00A3E0] transition-colors">
+                    <a href="tel:4165616664" className="text-2xl md:text-3xl font-bold tracking-wider hover:text-[#a2f2ea] transition-colors">
                       416-561-6664
                     </a>
                   </div>
@@ -47,7 +47,7 @@ const Contact = () => {
             </div>
 
             <div className="relative z-10 space-y-4">
-              <button className="bg-[#004e66] hover:bg-[#003d52] text-white px-10 py-4 text-sm font-bold uppercase tracking-wider transition-colors duration-300 w-full sm:w-auto shadow-md">
+              <button className="bg-[#0f766e] hover:bg-[#003d52] text-white px-10 py-4 text-sm font-bold uppercase tracking-wider transition-colors duration-300 w-full sm:w-auto shadow-md">
                 CONTACT US
               </button>
             </div>
@@ -67,7 +67,7 @@ const Contact = () => {
                   <input
                     type="text"
                     placeholder="John"
-                    className="w-full border-b border-gray-200 py-3 bg-transparent text-gray-800 focus:outline-none focus:border-[#00A3E0] transition-colors"
+                    className="w-full border-b border-gray-200 py-3 bg-transparent text-gray-800 focus:outline-none focus:border-[#a2f2ea] transition-colors"
                   />
                 </div>
                 <div className="space-y-2">
@@ -75,7 +75,7 @@ const Contact = () => {
                   <input
                     type="text"
                     placeholder="Doe"
-                    className="w-full border-b border-gray-200 py-3 bg-transparent text-gray-800 focus:outline-none focus:border-[#00A3E0] transition-colors"
+                    className="w-full border-b border-gray-200 py-3 bg-transparent text-gray-800 focus:outline-none focus:border-[#a2f2ea] transition-colors"
                   />
                 </div>
               </div>
@@ -85,7 +85,7 @@ const Contact = () => {
                 <input
                   type="email"
                   placeholder="john@example.com"
-                  className="w-full border-b border-gray-200 py-3 bg-transparent text-gray-800 focus:outline-none focus:border-[#00A3E0] transition-colors"
+                  className="w-full border-b border-gray-200 py-3 bg-transparent text-gray-800 focus:outline-none focus:border-[#a2f2ea] transition-colors"
                 />
               </div>
 
@@ -94,7 +94,7 @@ const Contact = () => {
                 <textarea
                   rows="4"
                   placeholder="How can we help you?"
-                  className="w-full border-b border-gray-200 py-3 bg-transparent text-gray-800 focus:outline-none focus:border-[#00A3E0] transition-colors resize-none"
+                  className="w-full border-b border-gray-200 py-3 bg-transparent text-gray-800 focus:outline-none focus:border-[#a2f2ea] transition-colors resize-none"
                 ></textarea>
               </div>
 

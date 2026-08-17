@@ -61,28 +61,28 @@ const reviewsData = [
 const Reviews = () => {
   return (
     <section className="w-full bg-[#FDFBF7] py-24 px-6 md:px-12 lg:px-16 relative overflow-hidden">
-      
+
       {/* Decorative Background Pattern */}
-      <div className="absolute inset-0 opacity-[0.02]" style={{ backgroundImage: 'radial-gradient(#004e66 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
+      <div className="absolute inset-0 opacity-[0.02]" style={{ backgroundImage: 'radial-gradient(#0f766e 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
 
       <div className="max-w-[1440px] mx-auto relative z-10">
-        
+
         {/* Section Header */}
         <div className="text-center mb-16 flex flex-col items-center">
-          <h3 className="text-[#00A3E0] uppercase tracking-[0.2em] text-xs md:text-sm font-bold mb-4 flex items-center justify-center gap-2">
+          <h3 className="text-gray-700 uppercase tracking-[0.2em] text-xs md:text-sm font-bold mb-4 flex items-center justify-center gap-2">
             Guest Testimonials
           </h3>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 text-gray-900">
             Unforgettable Memories
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-[#00A3E0] to-[#004e66] rounded-full mb-10 mx-auto"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-[#a2f2ea] to-[#0f766e] rounded-full mb-10 mx-auto"></div>
         </div>
 
         {/* Masonry-style Grid for Reviews */}
         <div className="columns-1 md:columns-2 lg:columns-3 gap-6 lg:gap-8 space-y-6 lg:space-y-8">
           {reviewsData.map((review) => (
-            <div 
-              key={review.id} 
+            <div
+              key={review.id}
               className="break-inside-avoid bg-white rounded-3xl p-8 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-500 group"
             >
               {/* Decorative Quote Icon */}
@@ -97,7 +97,7 @@ const Reviews = () => {
                     <Star key={i} className="w-4 h-4 fill-[#D4AF37] text-[#D4AF37]" />
                   ))}
                 </div>
-                
+
                 {/* Review Text */}
                 <p className="text-gray-600 text-[15px] leading-relaxed font-light mb-8 italic">
                   "{review.text}"
@@ -112,14 +112,14 @@ const Reviews = () => {
                   <div className={`w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg ${review.color}`}>
                     {review.initial}
                   </div>
-                  
+
                   {/* Name & Platform */}
                   <div>
                     <div className="flex items-center gap-1.5 mb-1">
                       <h4 className="text-gray-900 font-bold text-sm">
                         {review.name}
                       </h4>
-                      <CheckCircle2 className="w-3.5 h-3.5 text-[#00A3E0]" />
+                      <CheckCircle2 className="w-3.5 h-3.5 text-[#a2f2ea]" />
                     </div>
                     <p className="text-gray-400 text-xs font-medium">
                       {review.date}
