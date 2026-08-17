@@ -7,8 +7,8 @@ import i5 from '../../assets/villaparadisojamaica/villaparadisojamaica/video/i5.
 
 const About = () => {
   return (
-    <section className="w-full bg-[#6284A6] py-16 px-6 md:px-12 lg:px-16 overflow-hidden">
-      <div className="max-w-[1440px] mx-auto rounded-[2rem] md:rounded-[3rem] bg-[#6284A6] text-white">
+    <section className="w-full bg-[#c6f5f0] py-16 px-6 md:px-12 lg:px-16 overflow-hidden">
+      <div className="max-w-[1440px] mx-auto rounded-[2rem] md:rounded-[3rem] bg-[#c6f5f0] text-white">
 
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-12">
 
@@ -16,11 +16,11 @@ const About = () => {
           <div className="w-full lg:w-1/2 flex flex-col justify-center animate-fade-in-up pr-0 lg:pr-8 py-8">
 
 
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 text-white">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 text-gray-800">
               Welcome to Villa Paradiso
             </h2>
 
-            <p className="text-white/90 text-[15px] md:text-base leading-[1.8] mb-6 font-light">
+            <p className="text-gray-900 text-[15px] md:text-base leading-[1.8] mb-6 font-light">
               Welcome to Villa Paradiso, an exquisite villa in the prestigious Mammee Bay
               Estate in Ocho Rios. Renowned for its pristine white sand beaches and
               captivating attractions like Dunn's River Falls, Dolphin Cove, and Mystic
@@ -28,7 +28,7 @@ const About = () => {
               and friends.
             </p>
 
-            <p className="text-white/90 text-[15px] md:text-base leading-[1.8] mb-12 font-light">
+            <p className="text-gray-900  text-[15px] md:text-base leading-[1.8] mb-12 font-light">
               Featuring 8 lavish bedrooms accommodating up to 18 guests, Villa Paradiso
               offers a haven of luxury and comfort. Immerse yourself in the refreshing
               waters of our private freshwater swimming pool, or stroll along our 150 feet of
