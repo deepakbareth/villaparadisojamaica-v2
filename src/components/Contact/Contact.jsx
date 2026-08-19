@@ -12,33 +12,33 @@ const Contact = () => {
         <div className="bg-white rounded-[2rem] md:rounded-[3rem] shadow-[0_20px_50px_rgb(0,0,0,0.05)] overflow-hidden flex flex-col lg:flex-row border border-gray-100">
 
           {/* Left Column: Contact Info & Text (From Screenshot) */}
-          <div className="w-full lg:w-5/12 bg-[#0F766E] text-white p-10 md:p-16 flex flex-col justify-between relative overflow-hidden">
+          <div className="w-full lg:w-5/12 bg-[#c5f1fc] text-white p-10 md:p-16 flex flex-col justify-between relative overflow-hidden">
             {/* Background decorative circles */}
             <div className="absolute -top-24 -right-24 w-64 h-64 bg-[#a2f2ea]/20 rounded-full blur-[80px] pointer-events-none"></div>
             <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-teal-500/20 rounded-full blur-[80px] pointer-events-none"></div>
 
             <div className="relative z-10">
-              <h3 className="text-gray-300 uppercase tracking-[0.2em] text-xs md:text-sm font-bold mb-4 flex items-center gap-2">
+              <h3 className="text-gray-700 uppercase tracking-[0.2em] text-xs md:text-sm font-bold mb-4 flex items-center gap-2">
                 Get In Touch
               </h3>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 text-white">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 text-gray-900">
                 Contact Us
               </h2>
               <div className="w-20 h-1 bg-gradient-to-r from-[#a2f2ea] to-[#0f766e] rounded-full mb-10"></div>
 
-              <p className="text-white/80 text-[15px] leading-relaxed font-light mb-10 max-w-md">
+              <p className="text-gray-800 text-[15px] leading-relaxed font-light mb-10 max-w-md">
                 Dear Friends, if you have any questions or need a quotation, just fill in the below and submit them to me and I will provide you with answers as quickly as possible. If you need to speak to me please call:
               </p>
 
               {/* Highlighted Phone Number */}
               <div className="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm mb-12 transform transition-transform hover:-translate-y-1 duration-300">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-[#a2f2ea]/20 rounded-full flex items-center justify-center text-[#a2f2ea]">
+                  <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-[#a2f2ea]">
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
-                    <p className="text-white/50 text-xs uppercase tracking-widest font-bold mb-1">Direct Line</p>
-                    <a href="tel:+1 4165616664" className="text-2xl md:text-3xl font-bold tracking-wider hover:text-[#a2f2ea] transition-colors">
+                    <p className="text-gray-900 text-xs uppercase tracking-widest font-bold mb-1">Direct Line</p>
+                    <a href="tel:+1 4165616664" className="text-2xl md:text-3xl font-bold tracking-wider text-gray-900 transition-colors">
                       +1 416-561-6664
                     </a>
                   </div>
