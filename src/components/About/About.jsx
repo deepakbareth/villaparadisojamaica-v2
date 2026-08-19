@@ -7,8 +7,8 @@ import i5 from '../../assets/villaparadisojamaica/villaparadisojamaica/video/i5.
 
 const About = () => {
   return (
-    <section className="w-full bg-[#c6f5f0] py-16 px-6 md:px-12 lg:px-16 overflow-hidden">
-      <div className="max-w-[1440px] mx-auto rounded-[2rem] md:rounded-[3rem] bg-[#c6f5f0] text-white">
+    <section className="w-full  py-16 px-6 md:px-12 lg:px-16 overflow-hidden">
+      <div className="max-w-[1440px] mx-auto rounded-[2rem] md:rounded-[3rem]  text-white">
 
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-12">
 

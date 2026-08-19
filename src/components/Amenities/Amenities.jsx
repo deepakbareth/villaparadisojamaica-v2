@@ -55,7 +55,7 @@ const Amenities = () => {
   ];
 
   return (
-    <section className="w-full bg-[#95cfc9] py-24 px-6 md:px-12 lg:px-16 relative overflow-hidden">
+    <section className="w-full bg-[#c5e6e4] py-24 px-6 md:px-12 lg:px-16 relative overflow-hidden">
       {/* Decorative gradient orb */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-500/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-teal-500/10 rounded-full blur-[100px] translate-y-1/3 -translate-x-1/4 pointer-events-none"></div>
@@ -67,7 +67,7 @@ const Amenities = () => {
           <h3 className="text-gray-700 uppercase tracking-[0.2em] text-xs md:text-sm font-bold mb-4 flex items-center justify-center gap-2">
             Unmatched Comfort
           </h3>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 text-white">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 text-gray-700">
             World-Class Amenities
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-[#a2f2ea] to-[#0f766e] rounded-full mb-10 mx-auto"></div>
