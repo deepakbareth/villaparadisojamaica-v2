@@ -80,10 +80,10 @@ const Amenities = () => {
               className="flex flex-col items-center group cursor-default"
             >
               {/* Icon Container with Hover Effect */}
-              <div className="w-20 h-20 rounded-full border border-gray-900/10 flex items-center justify-center mb-6 group-hover:bg-white/5 group-hover:border-[#a2f2ea]/50 group-hover:shadow-[0_0_30px_rgba(0,163,224,0.15)] transition-all duration-500 relative">
+              <div className="w-20 h-20 rounded-full border border-gray-900/10 bg-gray-900 flex items-center justify-center mb-6 group-hover:bg-gray-900 group-hover:border-[#a2f2ea]/50 group-hover:shadow-[0_0_30px_rgba(0,163,224,0.15)] transition-all duration-500 relative">
                 {/* Inner glowing dot on hover */}
                 <div className="absolute inset-0 rounded-full bg-[#a2f2ea]/0 group-hover:bg-[#a2f2ea]/10 scale-50 group-hover:scale-100 transition-all duration-500"></div>
-                <div className="relative z-10 group-hover:scale-110 group-hover:text-gray-900 transition-transform duration-500">
+                <div className="relative z-10 group-hover:scale-110 group-hover:text-gray-900  transition-transform duration-500">
                   {item.icon}
                 </div>
               </div>
