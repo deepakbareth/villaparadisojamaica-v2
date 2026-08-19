@@ -34,9 +34,6 @@ const About = () => {
               secluded white sand beach.
             </p>
 
-            {/* <button className="bg-[#004e66] hover:bg-[#003d52] text-white px-10 py-4 text-sm font-medium transition-all duration-300 w-fit uppercase tracking-wider">
-              READ MORE
-            </button> */}
 
           </div>
 
