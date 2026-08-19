@@ -73,7 +73,7 @@ const GalleryPreview = () => {
             <div className="w-20 h-1 bg-gradient-to-r from-[#a2f2ea] to-[#0f766e] rounded-full mb-10"></div>
           </div>
 
-          <button className="bg-primary hover:bg-accent text-white px-8 py-4 rounded-full font-bold text-sm transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-1 flex items-center gap-2 group w-fit">
+          <button className="bg-[#0f766e] hover:bg-[#003d52]  text-white px-8 py-4 rounded-full font-bold text-sm transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-1 flex items-center gap-2 group w-fit">
             VIEW FULL GALLERY
             <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
           </button>

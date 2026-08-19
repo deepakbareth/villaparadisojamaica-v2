@@ -55,8 +55,7 @@ const Amenities = () => {
   ];
 
   return (
-    <section className="w-full bg-[#c5e6e4] py-24 px-6 md:px-12 lg:px-16 relative overflow-hidden">
-      {/* Decorative gradient orb */}
+    <section className="w-full bg-[#0F766E] py-24 px-6 md:px-12 lg:px-16 relative overflow-hidden">      {/* Decorative gradient orb */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-500/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-teal-500/10 rounded-full blur-[100px] translate-y-1/3 -translate-x-1/4 pointer-events-none"></div>
 
@@ -64,10 +63,10 @@ const Amenities = () => {
 
         {/* Section Header */}
         <div className="text-center mb-16 flex flex-col items-center">
-          <h3 className="text-gray-700 uppercase tracking-[0.2em] text-xs md:text-sm font-bold mb-4 flex items-center justify-center gap-2">
+          <h3 className="text-gray-300 uppercase tracking-[0.2em] text-xs md:text-sm font-bold mb-4 flex items-center justify-center gap-2">
             Unmatched Comfort
           </h3>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 text-gray-700">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 text-white">
             World-Class Amenities
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-[#a2f2ea] to-[#0f766e] rounded-full mb-10 mx-auto"></div>
@@ -90,7 +89,7 @@ const Amenities = () => {
               </div>
 
               {/* Text Content */}
-              <p className="text-gray-500 text-[11px] md:text-xs uppercase tracking-[0.15em] mb-2 font-semibold">
+              <p className="text-gray-300 text-[11px] md:text-xs uppercase tracking-[0.15em] mb-2 font-semibold">
                 {item.label}
               </p>
               <h4 className="text-white text-base md:text-lg font-medium text-center tracking-wide">

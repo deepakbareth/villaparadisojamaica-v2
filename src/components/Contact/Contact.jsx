@@ -12,16 +12,16 @@ const Contact = () => {
         <div className="bg-white rounded-[2rem] md:rounded-[3rem] shadow-[0_20px_50px_rgb(0,0,0,0.05)] overflow-hidden flex flex-col lg:flex-row border border-gray-100">
 
           {/* Left Column: Contact Info & Text (From Screenshot) */}
-          <div className="w-full lg:w-5/12 bg-[#95cfc9] text-white p-10 md:p-16 flex flex-col justify-between relative overflow-hidden">
+          <div className="w-full lg:w-5/12 bg-[#0F766E] text-white p-10 md:p-16 flex flex-col justify-between relative overflow-hidden">
             {/* Background decorative circles */}
             <div className="absolute -top-24 -right-24 w-64 h-64 bg-[#a2f2ea]/20 rounded-full blur-[80px] pointer-events-none"></div>
             <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-teal-500/20 rounded-full blur-[80px] pointer-events-none"></div>
 
             <div className="relative z-10">
-              <h3 className="text-gray-700 uppercase tracking-[0.2em] text-xs md:text-sm font-bold mb-4 flex items-center gap-2">
+              <h3 className="text-gray-300 uppercase tracking-[0.2em] text-xs md:text-sm font-bold mb-4 flex items-center gap-2">
                 Get In Touch
               </h3>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 text-gray-900">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 text-white">
                 Contact Us
               </h2>
               <div className="w-20 h-1 bg-gradient-to-r from-[#a2f2ea] to-[#0f766e] rounded-full mb-10"></div>
@@ -38,23 +38,18 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-white/50 text-xs uppercase tracking-widest font-bold mb-1">Direct Line</p>
-                    <a href="tel:4165616664" className="text-2xl md:text-3xl font-bold tracking-wider hover:text-[#a2f2ea] transition-colors">
-                      416-561-6664
+                    <a href="tel:+1 4165616664" className="text-2xl md:text-3xl font-bold tracking-wider hover:text-[#a2f2ea] transition-colors">
+                      +1 416-561-6664
                     </a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="relative z-10 space-y-4">
-              <button className="bg-[#0f766e] hover:bg-[#003d52] text-white px-10 py-4 text-sm font-bold uppercase tracking-wider transition-colors duration-300 w-full sm:w-auto shadow-md">
-                CONTACT US
-              </button>
-            </div>
           </div>
 
           {/* Right Column: Contact Form */}
-          <div className="w-full lg:w-7/12 p-10 md:p-16 lg:p-20 flex flex-col justify-center bg-white">
+          <div className="w-full lg:w-7/12 p-10 md:p-16 lg:p-10 flex flex-col justify-center bg-white">
             <div className="mb-10">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Send us a message</h3>
               <p className="text-gray-500 text-sm">We'll get back to you within 24 hours.</p>

@@ -7,20 +7,19 @@ import i5 from '../../assets/villaparadisojamaica/villaparadisojamaica/video/i5.
 
 const About = () => {
   return (
-    <section className="w-full  py-16 px-6 md:px-12 lg:px-16 overflow-hidden">
-      <div className="max-w-[1440px] mx-auto rounded-[2rem] md:rounded-[3rem]  text-white">
-
+    <section className="w-full bg-[#0D9488] py-16 px-6 md:px-12 lg:px-16 overflow-hidden">
+      <div className="max-w-[1440px] mx-auto rounded-[2rem] md:rounded-[3rem] bg-[#0D9488] text-white">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-12">
 
           {/* Left Column: Exact Text Content */}
           <div className="w-full lg:w-1/2 flex flex-col justify-center animate-fade-in-up pr-0 lg:pr-8 py-8">
 
 
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 text-gray-800">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 text-white">
               Welcome to Villa Paradiso
             </h2>
 
-            <p className="text-gray-900 text-[15px] md:text-base leading-[1.8] mb-6 font-light">
+            <p className="text-white text-[15px] md:text-base leading-[1.8] mb-6 font-light">
               Welcome to Villa Paradiso, an exquisite villa in the prestigious Mammee Bay
               Estate in Ocho Rios. Renowned for its pristine white sand beaches and
               captivating attractions like Dunn's River Falls, Dolphin Cove, and Mystic
@@ -28,21 +27,21 @@ const About = () => {
               and friends.
             </p>
 
-            <p className="text-gray-900  text-[15px] md:text-base leading-[1.8] mb-12 font-light">
+            <p className="text-white text-[15px] md:text-base leading-[1.8] mb-12 font-light">
               Featuring 8 lavish bedrooms accommodating up to 18 guests, Villa Paradiso
               offers a haven of luxury and comfort. Immerse yourself in the refreshing
               waters of our private freshwater swimming pool, or stroll along our 150 feet of
               secluded white sand beach.
             </p>
 
-            <button className="bg-[#004e66] hover:bg-[#003d52] text-white px-10 py-4 text-sm font-medium transition-all duration-300 w-fit uppercase tracking-wider">
+            {/* <button className="bg-[#004e66] hover:bg-[#003d52] text-white px-10 py-4 text-sm font-medium transition-all duration-300 w-fit uppercase tracking-wider">
               READ MORE
-            </button>
+            </button> */}
 
           </div>
 
           {/* Right Column: Bento Grid Images */}
-          <div className="w-full lg:w-1/2 flex gap-4 h-[500px] lg:h-[560px]">
+          <div className="w-full lg:w-1/2 flex gap-4 h-[400px] lg:h-[460px]">
 
             {/* Grid Column 1 */}
             <div className="w-1/2 flex flex-col gap-4">
